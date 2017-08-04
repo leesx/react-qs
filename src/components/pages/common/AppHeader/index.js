@@ -33,7 +33,7 @@ export default class AppHeader extends Component{
               <div className="logo">
                 <Link to="home?tabKey=home&title=首页">
                     <SVGIcon className="logo-icon" icon="#icon-maotouying" />
-                    <span>React</span>
+                    <span>React Zoo</span>
                 </Link>
               </div>
               <div className="site-link">

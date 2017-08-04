@@ -16,17 +16,13 @@ export default class Demo1 extends Component {
                 <h1>Demo1</h1>
                 <div className="test-bg"></div>
                 <div>
-                    <ul className="icon_lists clear">
+                    <div className="icon-lists clear">
 
-                        <li>
-                            <SVGIcon  icon="#icon-lang" />
+                        <SVGIcon  icon="#icon-xiaoji" />
+                        <SVGIcon  icon="#icon-huli" />
+                        <SVGIcon  icon="#icon-lang" />
 
-                            <div className="name">狼</div>
-                            <div className="fontclass">{'#icon-lang'}</div>
-                        </li>
-
-
-                    </ul>
+                    </div>
 
                 </div>
             </div>

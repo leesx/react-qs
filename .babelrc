@@ -1,0 +1,38 @@
+{
+    "presets": ["es2015", "stage-1", "stage-3", "react"],
+    "env": {
+        "development": {
+            "presets": ["react-hmre"],
+            "plugins": [
+							"transform-async-to-generator",
+							["react-transform", {
+               "transforms": [{
+                 "transform": "react-transform-hmr",
+                 // if you use React Native, pass "react-native" instead:
+                 "imports": ["react"],
+                 // this is important for Webpack HMR:
+                 "locals": ["module"]
+               }]}],
+							 ["transform-runtime", {
+								 "helpers": false,
+								 "polyfill": false,
+								 "regenerator": true,
+								 "moduleName": "babel-runtime"
+							 }]
+             ]
+        },
+        "production": {
+            "compact": true
+        },
+    },
+    "plugins": [
+        "transform-object-assign",
+				"transform-decorators-legacy",
+				//"add-module-exports",
+				//"transform-es2015-modules-umd",
+        ["import", {
+          "libraryName": "antd",
+          "style": true,  // 'less'
+        }]
+    ]
+}

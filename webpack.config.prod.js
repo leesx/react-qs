@@ -159,6 +159,6 @@ module.exports = {
         }),
         new webpack.DllReferencePlugin({context: __dirname, manifest: require('./manifest.production.json')}),
         new ExtractTextPlugin({filename: "styles/default/[name].[chunkhash].min.css", disable: false, allChunks: true}),
-        new webpack.BannerPlugin(`Copyright Hualala inc. \n update: ${nowDateStr}`)
+        new webpack.BannerPlugin(`Copyright Leesx inc. \n update: ${nowDateStr}`)
     ]
 };

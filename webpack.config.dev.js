@@ -147,7 +147,7 @@ const webpackConfig = {
                     removeComments               : true
                 }
         }),
-        new webpack.BannerPlugin(`Copyright Hualala inc. \n update: ${nowDateStr}`),
+        new webpack.BannerPlugin(`Copyright Leesx inc. \n update: ${nowDateStr}`),
         new webpack.NoEmitOnErrorsPlugin(),
         new webpack.HotModuleReplacementPlugin()
     ],

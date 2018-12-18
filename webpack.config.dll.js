@@ -75,7 +75,7 @@ if (__DEV__ === true) {
                 warnings: false
             }
         }),
-        new webpack.BannerPlugin(`Copyright Hualala inc. \n update: ${nowDateStr}`),
+        new webpack.BannerPlugin(`Copyright leesx inc. \n update: ${nowDateStr}`),
     ];
     config.plugins.push(...productionPlugins);
 }
